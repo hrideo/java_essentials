@@ -12,8 +12,7 @@ public class GradeMessage {
         scanner.close();
 
         String message = switch(grade){
-            case "A" -> "Excellent job";
-            case "B" -> "Great job";
+            case "A", "B" -> "Excellent job"; //listing case A & B by delimiting by comma
             case "C" -> "Good job";
             case "D" -> "You need to work a bit harder";
             case "F" -> "Uh oh!";
