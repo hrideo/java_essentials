@@ -12,12 +12,12 @@ public class RollTheDieGame {
 
         System.out.println("Welcome to Roll the die game!");
 
-        for(int i=0; i<maxRolls; i++){
+        for(int i=1; i<=maxRolls; i++){
 
             int die = random.nextInt(6) + 1;
             currentSpace = currentSpace + die;
 
-            System.out.print(String.format("Roll #%d. You've rolled a %d. ", (i+1), die));
+            System.out.print(String.format("Roll #%d. You've rolled a %d. ", (i), die));
 
             if(currentSpace==lastSpace){
                 System.out.println("You are on space " + currentSpace + ". Congrats you win.");
@@ -29,7 +29,7 @@ public class RollTheDieGame {
             }
             else if(i==maxRolls && currentSpace<lastSpace){
                 System.out.println("You are on space " + currentSpace + ".");
-                System.out.println("Unfortunately you didn't make it to all  " + lastSpace + " spaces . You lose.");
+                System.out.println("Unfortunately you didn't make it to all " + lastSpace + " spaces . You lose.");
             }
             else{
                 int spacesToGo = lastSpace - currentSpace;
