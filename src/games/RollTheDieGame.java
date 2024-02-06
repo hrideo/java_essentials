@@ -27,11 +27,17 @@ public class RollTheDieGame {
                 System.out.println("Unfortunately, that takes you past " + lastSpace + " spaces. You lose.");
                 break;
             }
+            else if(i==maxRolls && currentSpace<lastSpace){
+                System.out.println("You are on space " + currentSpace + ".");
+                System.out.println("Unfortunately you didn't make it to all  " + lastSpace + " spaces . You lose.");
+            }
             else{
                 int spacesToGo = lastSpace - currentSpace;
                 System.out.println("You are now on space " + currentSpace + " and have "
                         + spacesToGo + " more to go.");
             }
+
+            System.out.println();
         }
 
     }
