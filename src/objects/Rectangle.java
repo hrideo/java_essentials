@@ -10,4 +10,18 @@ public class Rectangle {
     double calculateArea(){
         return length * width;
     }
+
+    double getLength(){
+        return length;
+    }
+    void setLength(double length){
+        this.length = length;
+    }
+
+    double getWidth(){
+        return width;
+    }
+    void setWidth(double width){
+        this.width = width;
+    }
 }
