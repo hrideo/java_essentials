@@ -23,10 +23,17 @@ public class arrayClass {
         playersA[4] = "Henry";
         playersA[5] = "Joe";
 
-        //reading value of element
-        System.out.println("The third player is " + playersA[2]);
-        //initializing the array while declaring it
-        String[] playersB ={ "Alpha", "Beta"};
+        //processing arrays
+        boolean chadFound = false;
+        int position = 0;
+
+        for(int i=0; i<playersA.length; i++){
+            if(playersA[i].equals("Chad")){
+                chadFound = true;
+                position = i;
+            }
+        }
+        System.out.println(chadFound + ", position found is " + position);
 
     }
 }
