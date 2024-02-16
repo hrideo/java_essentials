@@ -2,6 +2,9 @@
 Strings: are not primitive data type, and they are also not wrapper class
 - string is an object that is sequence of characters
 - we can access a string just like we would access an array of characters
+
+- strings & other objects should be compared using equals() methods, instead of == operator,
+this is because == compares memory locations and equals method compares values
  */
 package text_processing;
 
