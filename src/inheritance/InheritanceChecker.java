@@ -3,9 +3,10 @@ package inheritance;
 public class InheritanceChecker {
 
     public static void main(String[] args){
-        //Person person1 = new Person();
+        Rectangle rectangle1 = new Rectangle();
+        Square square1 = new Square();
 
-        //A superclass' constructor is run before subclass' constructor
-        Employee employee1 = new Employee();
+        //rectangle1.prin
+        //square1.prin
     }
 }
