@@ -1,3 +1,12 @@
+/*
+Limiting access in Inheritance:
+-Constructors are not technically members of a class and therefore are not inherited
+-All public and protected methods and fields in a superclass are inherited by its subclass
+-Private methods and fields are not inherited
+-Final methods are inherited but cannot be overridden
+-During overriding methods, we can change the access modifier, but it needs to be less strict than original method
+ e.g. protected method overridden to be public
+ */
 package inheritance;
 
 public class Rectangle {
