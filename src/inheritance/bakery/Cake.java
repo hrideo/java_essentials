@@ -6,7 +6,11 @@ public class Cake {
     private double price;
 
     public Cake(){
-        setFlavor("vanilla");
+        this("vanilla"); //this will call the constructor of this class tha matches the signature
+    }
+
+    public Cake(String flavor){
+        setFlavor(flavor);
         setPrice(9.99);
     }
 

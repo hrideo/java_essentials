@@ -2,11 +2,12 @@ package inheritance.bakery;
 
 public class WeddingCake extends Cake {
 
-    public WeddingCake() {
-        setFlavor("almond");
-    }
-
     private int tiers;
+
+    public WeddingCake() {
+        //calling constructor of superclass Cake using keyword super()
+        super("almond");
+    }
 
     public int getTiers() {
         return tiers;
