@@ -15,6 +15,7 @@ e.g. using interface keyword in place of class
 -Even if static and final modifiers are not explicitly written when declaring the fields it is still
  implicitly both static and final
 -In interfaces, unless specified, the methods are implicitly public and abstract
+-In addition to abstract methods,interfaces may also contain default and static methods
 
 
 Multiple inheritance: While a class can only extend one class, it can implement multiple interfaces.
