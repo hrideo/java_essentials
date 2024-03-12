@@ -14,6 +14,7 @@ e.g. using interface keyword in place of class
     )
 -Even if static and final modifiers are not explicitly written when declaring the fields it is still
  implicitly both static and final
+-In interfaces, unless specified, the methods are implicitly public and abstract
 
 
 Multiple inheritance: While a class can only extend one class, it can implement multiple interfaces.
@@ -25,7 +26,7 @@ Multiple inheritance: While a class can only extend one class, it can implement 
  //implement all abstract methods from DigitalFile
  }
 -If more than one of the interfaces being implemented contain a method with same signature, the implementing class
- can provide one over implementation, and that will fulfill the obligation with all the relevant interfaces
+ can provide one overridden implementation, and that will fulfill the obligation with all the relevant interfaces
  */
 package interfaces;
 

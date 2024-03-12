@@ -9,4 +9,12 @@ public interface Product {
 // the abstract reserved word
     String getName();
     void setName(String name);
+
+//default methods: are methods within an interface that allow us to provide default implementation
+//-this enables to ensure backward compatibility in implementing classes, when changes/additions are made to interface
+//-to indicate default method we write 'default' at beginning of method's header, and we give it body
+//-they are not final and classes that implement interface can override default methods
+//-if there is no good default implementation, it may be best to leave new method as abstract and then let class implement it
+    default double getPrice(){ return 50; }
+    default void setPrice(double price){}
 }
