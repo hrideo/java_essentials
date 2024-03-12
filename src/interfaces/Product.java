@@ -17,4 +17,9 @@ public interface Product {
 //-if there is no good default implementation, it may be best to leave new method as abstract and then let class implement it
     default double getPrice(){ return 50; }
     default void setPrice(double price){}
+
+//static methods: like default methods, provide implementation in interface, but they are not inherited by implementing classes, thus cannot be overridden
+//-as said they are not inherited by implementing classes, thus they cannot be accessed through an instance of the class. They can only be accessed directly from the interface.
+//-Interfaces cannot be instantiated, though, which is why the methods must be defined as static to access without object.
+//-This enables us to call the static method by using the interface’s name. No instantiation is required to access static members.
 }
