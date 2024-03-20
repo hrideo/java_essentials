@@ -27,6 +27,11 @@ The most common ones are:
 
 In addition to collections themselves, Java also provides a collections class which contains common algorithms that are needed to work with the data structures
 Common ones include- binarySearch, copy, frequency, reverse, shuffle, sort.
+
+Ways to iterate over a collection:
+-Iterator
+-Enhanced for loop
+-forEach method
  */
 package collections;
 
