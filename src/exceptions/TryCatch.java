@@ -23,7 +23,12 @@ public class TryCatch {
             //in case of an error, the createNewFile method will throw an IO exception.
             file.createNewFile();
         }catch(IOException e){
-            System.out.println("Sorry, an error has occurred");
+            //the getMessage method details of why the exception was thrown
+            System.out.println("Sorry, an error has occurred: " + e.getMessage());
+            //a Stack Trace is history of method calls made within program's execution that led to exception being thrown
+            //thus allows programmers to trace the path the program has taken
+            e.printStackTrace();
+            //the last line of stack trace is where the code that caused the exception began
         }
     }
 }
