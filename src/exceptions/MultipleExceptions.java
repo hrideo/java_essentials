@@ -27,10 +27,10 @@ public class MultipleExceptions {
         }
          */
                 //OR
-        /*
-catch (FileNotFoundException | InputMismatchException e) {
+
+        catch (FileNotFoundException | InputMismatchException e) {
             e.printStackTrace();
         }
-         */
+
     }
 }
